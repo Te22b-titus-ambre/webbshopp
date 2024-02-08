@@ -1,0 +1,41 @@
+.header
+{
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+}
+
+body
+{
+    background-color: black;
+}
+
+.TitLogo
+{
+    position: absolute;
+    right: 0cm;
+    margin-right: 8px;
+    width: auto;
+    height: 20%;
+}
+
+.TitLogo > img{
+    max-height:60%;
+    max-width: auto;
+
+}
+
+
+.Hamburber
+{
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 8px;
+    width: auto;
+    height: 20%;
+}
+
+.Hamburber > img{
+    max-height:60%;
+    max-width: auto;
+}
