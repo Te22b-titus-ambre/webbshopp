@@ -63,3 +63,27 @@ body{
     margin-top: -5px;
     
 }
+
+.meny
+{
+    display: none;
+}
+
+.filmer
+{
+    display: flex;
+    image-resolution: 100px, 200px;
+    width: 100vw ;
+    height: 100vh;
+}
+.film1, .film2, .film3, .film4, .film5, .film6
+{
+    width: 100vh;
+    height: 25px;
+}
+.serie1, .serie2, .serie3, .serie4, .serie5, .serie6
+{
+    width: 100vh;
+    padding: none;
+    height: 25px;
+}
