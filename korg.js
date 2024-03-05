@@ -16,7 +16,7 @@ function load_cart()
 
     var summa = 199 * array.length
     console.log(summa)
-    let summaElement = document.createElement("h2");
+    let summaElement = document.createElement("h1");
     summaElement.textContent = summa;
     summaElement.classList.add("summa");
     var element = document.getElementById("hejhej")
