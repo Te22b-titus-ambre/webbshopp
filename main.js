@@ -1,15 +1,28 @@
-const burger = document.querySelector('.hamburbur');
-const menu  = document.querySelector('.meny');
-let burgerChecked = false;
-burger.addEventListener("click", function () {
-    menu.style.display = "flex";
-    burger.style.marginLeft = "40%"
-    burger.textContent = "image.jpg"
-    burgerChecked = true
-})
+function addToCart(id, bild_src, pris)
+{
+    let prod = {
+        varunamn: id,
+        bilden: bild_src,
+        priset: pris, 
+    }
+    // Hämta json data från localstorage
+    let json_data = window.localStorage.getItem("korg");
+    // Om js-array inte finns (NULL) skapa tom js array
+    console.log(json_data);
 
-    burger.addEventListener("dblclick", function () {
-        menu.style.display = "none";
-        burger.style.marginLeft = "0";
-        burger.src  = "titus.jpg"
-    });
+    let array = JSON.parse(json_data);
+
+    if(!array)
+        array=[];
+    // Göra om json data till Array
+
+    //Skapa js onjekt med id,bild_src och pris
+    console.log(array);
+    array.push(prod);
+    json_data = JSON.stringify(array);
+    window.localStorage.setItem("korg", json_data)
+
+    // Lägg in (push) js objekt i arrayen 
+    // Formatera arrayen till json-data 
+    // läggin json-data till localstorage
+}
