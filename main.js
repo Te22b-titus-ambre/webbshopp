@@ -19,6 +19,7 @@ function addToCart(id, bild_src, pris)
     //Skapa js onjekt med id,bild_src och pris
     console.log(array);
     array.push(prod);
+    console.log("antal varor="+array.length);
     json_data = JSON.stringify(array);
     window.localStorage.setItem("korg", json_data)
 

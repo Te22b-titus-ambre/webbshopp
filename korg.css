@@ -1,0 +1,54 @@
+
+.vara{
+    background-color: black;
+    border: 5px;
+    border-style: solid;
+    border-color: #0097FF;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.v{
+    display: flex;
+    justify-content: center;
+}
+.img{
+    display: flex;
+    justify-content: right;
+}
+.hej{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #0097FF;
+}
+
+.summa{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    color: #0097FF;
+}
+
+.Images{
+    max-width: 200px;
+    max-height: auto;
+}
+p{
+    color: #0097FF;
+}
+h2{
+    color: #0097FF;
+}
+body{
+    background-color: black;
+}
+.v{
+    margin-left: 2%;
+}
